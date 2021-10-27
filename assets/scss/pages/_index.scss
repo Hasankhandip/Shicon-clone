@@ -1,0 +1,19 @@
+//  banner-section scss start
+.banner-section {
+  padding-top: 200px;
+  padding-bottom: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-title {
+  font-size: 55px;
+  color: #fff;
+  font-family: $font-2;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.banner-details {
+  color: #fff;
+}
+//  banner-section scss end
