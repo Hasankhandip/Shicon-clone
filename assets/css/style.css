@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -85,6 +85,17 @@ img {
   color: #fff;
 }
 
+.btn-2 {
+  font-family: "Playfair Display", serif;
+  background-color: #4285f4;
+  padding: 12px 50px;
+  color: #fff;
+}
+
+.btn-2:hover {
+  color: #fff;
+}
+
 .header-top-navbar {
   background-color: #4285f4;
   padding: 20px 0;
@@ -97,8 +108,7 @@ img {
 }
 
 .header-contact-img {
-  width: 30px;
-  height: 30px;
+  width: auto;
   margin-right: 15px;
 }
 
@@ -114,11 +124,11 @@ img {
   border-right: 3px solid #77a8fa;
 }
 
-.header-contact-item:nth-child(1) {
+.header-contact-item:first-child {
   border-left: none;
 }
 
-.header-contact-item:nth-child(3) {
+.header-contact-item:last-child {
   border-right: none;
 }
 
@@ -144,7 +154,8 @@ img {
 }
 
 .nav-link {
-  font-family: "Zen Old Mincho", serif;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
   color: #575757 !important;
   padding: 10px 15px !important;
   -webkit-transition: 0.4s;
@@ -160,7 +171,7 @@ img {
 }
 
 .header-serch-bar {
-  font-size: 20px;
+  font-size: 25px;
   margin-left: 30px;
   color: #4285f4;
 }
@@ -178,14 +189,135 @@ img {
 }
 
 .banner-title {
-  font-size: 55px;
+  font-size: 100px;
   color: #fff;
-  font-family: "Libre Baskerville", serif;
-  font-weight: 900;
-  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  margin-bottom: 35px;
 }
 
 .banner-details {
   color: #fff;
+  font-size: 20px;
+}
+
+.place-search-section {
+  background-color: transparent;
+  margin-top: -125px;
+  padding-bottom: 125px;
+}
+
+.place-search-input {
+  font-size: 16px;
+  width: 100%;
+  padding: 12px;
+  border-left: 1px solid rgba(0, 0, 0, 0.103) !important;
+  border-right: 1px solid rgba(0, 0, 0, 0.103) !important;
+  border: none;
+}
+
+.place-search-input:focus {
+  outline: none;
+}
+
+.place-search-item-wrapper {
+  padding: 100px 15px;
+  background-color: #fff;
+}
+
+.place-search-item {
+  position: relative;
+}
+
+.place-search-input-icon {
+  font-size: 20px;
+  color: #4285f4;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.place-search-input-icon:hover {
+  color: #4285f4;
+}
+
+.fa-caret-down {
+  color: #575757;
+}
+
+.about-content-section {
+  padding-bottom: 120px;
+}
+
+.about-title-top {
+  font-family: "Dancing Script", cursive;
+  font-size: 25px;
+  color: #4285f4;
+  margin-bottom: 15px;
+}
+
+.about-title {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.about-title-icon-line {
+  position: relative;
+  width: 80px;
+  height: 1px;
+  display: inline-block;
+  background: #4285f4;
+}
+
+.about-title-icon-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 80px;
+  height: 1px;
+  display: inline-block;
+  background: #4285f4;
+}
+
+.about-title-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.boat-icon {
+  max-width: 30px;
+  margin-left: 5px;
+}
+
+.about-details-info {
+  margin-bottom: 35px;
+}
+
+.about-img-icon {
+  width: auto;
+  margin-bottom: 30px;
+}
+
+.about-item-title {
+  font-size: 24px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1400px) {
+  .header-contact-item {
+    padding: 0px 23px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -7,8 +7,7 @@
   display: flex;
 }
 .header-contact-img {
-  width: 30px;
-  height: 30px;
+  width: auto;
   margin-right: 15px;
 }
 .header-contact-item {
@@ -17,10 +16,10 @@
   padding: 0 25px;
   border-left: 3px solid #0749b5;
   border-right: 3px solid #77a8fa;
-  &:nth-child(1) {
+  &:first-child {
     border-left: none;
   }
-  &:nth-child(3) {
+  &:last-child {
     border-right: none;
   }
 }
@@ -42,6 +41,7 @@
 }
 .nav-link {
   font-family: $font-1;
+  font-size: 20px;
   color: #575757 !important;
   padding: 10px 15px !important;
   transition: 0.4s;
@@ -53,7 +53,7 @@
   }
 }
 .header-serch-bar {
-  font-size: 20px;
+  font-size: 25px;
   margin-left: 30px;
   color: $main-color;
 }

@@ -7,13 +7,111 @@
   background-size: cover;
 }
 .banner-title {
-  font-size: 55px;
+  font-size: 100px;
   color: #fff;
-  font-family: $font-2;
-  font-weight: 900;
-  margin-bottom: 20px;
+  font-family: $font-1;
+  font-weight: 700;
+  margin-bottom: 35px;
 }
 .banner-details {
   color: #fff;
+  font-size: 20px;
 }
 //  banner-section scss end
+
+// place-search-section scss start
+.place-search-section {
+  background-color: transparent;
+  margin-top: -125px;
+  padding-bottom: 125px;
+}
+.place-search-input {
+  font-size: 16px;
+  width: 100%;
+  padding: 12px;
+  border-left: 1px solid rgba(0, 0, 0, 0.103) !important;
+  border-right: 1px solid rgba(0, 0, 0, 0.103) !important;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+.place-search-item-wrapper {
+  padding: 100px 15px;
+  background-color: #fff;
+}
+.place-search-item {
+  position: relative;
+}
+.place-search-input-icon {
+  font-size: 20px;
+  color: $main-color;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  &:hover {
+    color: $main-color;
+  }
+}
+.fa-caret-down {
+  color: #575757;
+}
+// place-search-section scss end
+
+//  about-us-section scss start
+.about-content-section {
+  padding-bottom: 120px;
+}
+.about-title-top {
+  font-family: $signature-font;
+  font-size: 25px;
+  color: $main-color;
+  margin-bottom: 15px;
+}
+.about-title {
+  font-family: $font-1;
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+.about-title-icon-line {
+  position: relative;
+  width: 80px;
+  height: 1px;
+  display: inline-block;
+  background: $main-color;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 80px;
+    height: 1px;
+    display: inline-block;
+    background: $main-color;
+  }
+}
+.about-title-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.boat-icon {
+  max-width: 30px;
+  margin-left: 5px;
+}
+.about-details-info {
+  margin-bottom: 35px;
+}
+.about-img-icon {
+  width: auto;
+  margin-bottom: 30px;
+}
+.about-item-title {
+  font-size: 24px;
+  font-family: $font-1;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+//  about-us-section scss end
