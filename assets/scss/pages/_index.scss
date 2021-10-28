@@ -117,7 +117,7 @@
   margin-bottom: 20px;
 }
 .about-item-wrap {
-  padding-bottom: 105px;
+  padding-bottom: 110px;
 }
 //  about-us-section scss end
 
@@ -365,8 +365,8 @@
 
 // feedbck-section scss start
 .feedback-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .feedback-item-title {
   text-align: center;
@@ -436,3 +436,35 @@
   font-weight: 400;
 }
 // feedbck-section scss end
+
+//  blog-section scss start
+.blog-section {
+  padding-top: 100px;
+  padding-bottom: 110px;
+}
+.blog-post-details {
+  display: flex;
+  justify-content: space-between;
+}
+.blog-caption {
+  padding: 30px;
+}
+.blog-post-time {
+  svg {
+    color: #575757;
+    margin-right: 5px;
+  }
+}
+.blog-text {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.blog-btn {
+  color: $main-color;
+  transition: 0.4s;
+  &:hover {
+    letter-spacing: 1px;
+    text-decoration: underline;
+  }
+}
+//  blog-section scss end
