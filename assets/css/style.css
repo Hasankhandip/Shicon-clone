@@ -612,6 +612,96 @@ img {
   margin-right: 15px;
 }
 
+.feedback-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.feedback-item-title {
+  text-align: center;
+  font-style: italic;
+}
+
+.feedback-item-top {
+  position: relative;
+  padding: 45px 10px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.103);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 1;
+}
+
+.feedback-item-top::before {
+  content: "";
+  position: absolute;
+  right: 25px;
+  bottom: 20px;
+  width: 13px;
+  height: 28px;
+  border-radius: 30px 0 0 0;
+  background-color: #575757;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.feedback-item-top::after {
+  content: "";
+  position: absolute;
+  right: 45px;
+  bottom: 20px;
+  width: 13px;
+  height: 28px;
+  border-radius: 30px 0 0 0;
+  background-color: #575757;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.feedback-item-top svg {
+  font-size: 30px;
+  position: absolute;
+  z-index: -1;
+  bottom: -19px;
+  left: 30px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #575757;
+}
+
+.feedback-item-top:hover {
+  border-color: #4285f4;
+}
+
+.feedback-item-top:hover::before, .feedback-item-top:hover::after {
+  background-color: #4285f4;
+}
+
+.feedback-item-top:hover svg {
+  color: #4285f4;
+}
+
+.feedback-item-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
+}
+
+.feedback-item-img {
+  width: auto;
+  margin-right: 13px;
+}
+
+.feedback-member-title {
+  font-size: 18px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
 @media (max-width: 1400px) {
   .header-contact-item {
     padding: 0px 23px;
