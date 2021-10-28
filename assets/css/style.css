@@ -44,7 +44,13 @@ ul {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+}
+
+.form-select:focus {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .main-btn {
@@ -208,6 +214,7 @@ img {
 }
 
 .place-search-input {
+  color: #6e6e6e;
   font-size: 16px;
   width: 100%;
   padding: 12px;
@@ -300,6 +307,7 @@ img {
 }
 
 .about-details-info {
+  font-size: 20px;
   margin-bottom: 35px;
 }
 
@@ -349,6 +357,7 @@ img {
 
 .section-header {
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .section-header-top {
@@ -376,10 +385,6 @@ img {
 .destination-section {
   padding-top: 115px;
   padding-bottom: 115px;
-}
-
-.destination-details-wrap {
-  margin-top: 60px;
 }
 
 .destination-details-wrap [class*="col-"]:nth-of-type(2) .destination-price {
@@ -448,6 +453,163 @@ img {
   color: #fff;
   padding: 0px 15px;
   border-radius: 4px;
+}
+
+.booking-section {
+  padding-bottom: 120px;
+}
+
+.booking-input-title {
+  margin-bottom: 10px;
+}
+
+.booking-form {
+  margin-bottom: 30px;
+}
+
+.booking-text-message {
+  height: 150px;
+  resize: none;
+}
+
+.booking-img-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.booking-img-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 120px;
+  z-index: -1;
+}
+
+.booking-img {
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  right: 60px;
+  -webkit-transform: translate(-55%, -50%);
+          transform: translate(-55%, -50%);
+  border: 20px solid #fff;
+}
+
+.team-section {
+  padding-bottom: 120px;
+}
+
+.team-item {
+  position: relative;
+}
+
+.team-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #4285f4;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.team-item::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #4285f4;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.team-item:hover::before, .team-item:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.team-item:hover .team-member-img::before {
+  opacity: 0.8;
+  visibility: visible;
+}
+
+.team-item:hover .team-img-plus {
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-member-img {
+  position: relative;
+  z-index: 1;
+}
+
+.team-member-img::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4285f4;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.team-img-plus {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.team-details {
+  padding: 30px;
+  text-align: center;
+}
+
+.team-title {
+  font-size: 24px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 14px;
+}
+
+.team-roll {
+  font-size: 18px;
+  color: #4285f4;
+  margin-bottom: 20px;
+}
+
+.team-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team-social-link {
+  color: #575757;
+  margin-right: 15px;
 }
 
 @media (max-width: 1400px) {
