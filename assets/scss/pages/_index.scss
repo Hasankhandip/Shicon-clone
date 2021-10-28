@@ -23,7 +23,7 @@
 .place-search-section {
   background-color: transparent;
   margin-top: -125px;
-  padding-bottom: 125px;
+  padding-bottom: 120px;
 }
 .place-search-input {
   font-size: 16px;
@@ -61,7 +61,7 @@
 
 //  about-us-section scss start
 .about-content-section {
-  padding-bottom: 120px;
+  padding-bottom: 115px;
 }
 .about-title-top {
   font-family: $signature-font;
@@ -99,7 +99,7 @@
 }
 .boat-icon {
   max-width: 30px;
-  margin-left: 5px;
+  margin: 0 5px;
 }
 .about-details-info {
   margin-bottom: 35px;
@@ -114,4 +114,117 @@
   font-weight: 400;
   margin-bottom: 20px;
 }
+.about-item-wrap {
+  padding-bottom: 105px;
+}
 //  about-us-section scss end
+
+// counter-up-section scss start
+.counter-up-section {
+  padding: 75px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .col-lg-3 {
+    width: 20%;
+  }
+}
+.counter-up-item {
+  text-align: center;
+}
+.counter-up-number {
+  font-family: $font-1;
+  color: #fff;
+  font-size: 60px;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+.counter-up-title {
+  color: #fff;
+  font-size: 20px;
+}
+// counter-up-section scss end
+
+// section-header scss start
+.section-header {
+  text-align: center;
+}
+.section-header-top {
+  font-size: 30px;
+  font-family: $signature-font;
+  color: $main-color;
+  margin-bottom: 10px;
+}
+.section-title {
+  font-size: 50px;
+  font-family: $font-1;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+.section-title-icon {
+  margin-bottom: 25px;
+}
+.section-details {
+  font-size: 20px;
+}
+// section-header scss end
+
+// destination-section scss start
+.destination-section {
+  padding-top: 115px;
+  padding-bottom: 115px;
+}
+.destination-details-wrap {
+  margin-top: 60px;
+  [class*="col-"]:nth-of-type(2) .destination-price {
+    background-color: #ef4676;
+  }
+  [class*="col-"]:nth-of-type(3) .destination-price {
+    background-color: #e67e22;
+  }
+  [class*="col-"]:nth-of-type(4) .destination-price {
+    background-color: #e67e22;
+  }
+  [class*="col-"]:nth-of-type(5) .destination-price {
+    background-color: #1abc9c;
+  }
+  [class*="col-"]:nth-of-type(6) .destination-price {
+    background-color: #1abc9c;
+  }
+}
+.destination-item {
+  margin-bottom: 35px;
+}
+.destination-title {
+  font-size: 24px;
+  font-family: $font-1;
+  margin-bottom: 15px;
+  svg {
+    color: $main-color !important;
+  }
+}
+.destination-time-price {
+  display: flex;
+  justify-content: space-between;
+}
+.destination-details {
+  padding: 25px;
+}
+.destination-time {
+  font-size: 15px;
+  svg {
+    color: $main-color;
+    opacity: 0.6;
+  }
+}
+.destination-price {
+  background-color: $main-color;
+  color: #fff;
+}
+.destination-price {
+  background-color: #4285f4;
+  color: #fff;
+  padding: 0px 15px;
+  border-radius: 4px;
+}
+// destination-section scss end

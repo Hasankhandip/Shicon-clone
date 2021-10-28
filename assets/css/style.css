@@ -204,7 +204,7 @@ img {
 .place-search-section {
   background-color: transparent;
   margin-top: -125px;
-  padding-bottom: 125px;
+  padding-bottom: 120px;
 }
 
 .place-search-input {
@@ -248,7 +248,7 @@ img {
 }
 
 .about-content-section {
-  padding-bottom: 120px;
+  padding-bottom: 115px;
 }
 
 .about-title-top {
@@ -296,7 +296,7 @@ img {
 
 .boat-icon {
   max-width: 30px;
-  margin-left: 5px;
+  margin: 0 5px;
 }
 
 .about-details-info {
@@ -313,6 +313,141 @@ img {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   margin-bottom: 20px;
+}
+
+.about-item-wrap {
+  padding-bottom: 105px;
+}
+
+.counter-up-section {
+  padding: 75px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.counter-up-section .col-lg-3 {
+  width: 20%;
+}
+
+.counter-up-item {
+  text-align: center;
+}
+
+.counter-up-number {
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-size: 60px;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.counter-up-title {
+  color: #fff;
+  font-size: 20px;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-header-top {
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
+  color: #4285f4;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.section-title-icon {
+  margin-bottom: 25px;
+}
+
+.section-details {
+  font-size: 20px;
+}
+
+.destination-section {
+  padding-top: 115px;
+  padding-bottom: 115px;
+}
+
+.destination-details-wrap {
+  margin-top: 60px;
+}
+
+.destination-details-wrap [class*="col-"]:nth-of-type(2) .destination-price {
+  background-color: #ef4676;
+}
+
+.destination-details-wrap [class*="col-"]:nth-of-type(3) .destination-price {
+  background-color: #e67e22;
+}
+
+.destination-details-wrap [class*="col-"]:nth-of-type(4) .destination-price {
+  background-color: #e67e22;
+}
+
+.destination-details-wrap [class*="col-"]:nth-of-type(5) .destination-price {
+  background-color: #1abc9c;
+}
+
+.destination-details-wrap [class*="col-"]:nth-of-type(6) .destination-price {
+  background-color: #1abc9c;
+}
+
+.destination-item {
+  margin-bottom: 35px;
+}
+
+.destination-title {
+  font-size: 24px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 15px;
+}
+
+.destination-title svg {
+  color: #4285f4 !important;
+}
+
+.destination-time-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.destination-details {
+  padding: 25px;
+}
+
+.destination-time {
+  font-size: 15px;
+}
+
+.destination-time svg {
+  color: #4285f4;
+  opacity: 0.6;
+}
+
+.destination-price {
+  background-color: #4285f4;
+  color: #fff;
+}
+
+.destination-price {
+  background-color: #4285f4;
+  color: #fff;
+  padding: 0px 15px;
+  border-radius: 4px;
 }
 
 @media (max-width: 1400px) {
