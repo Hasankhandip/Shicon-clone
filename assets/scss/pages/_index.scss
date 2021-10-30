@@ -128,6 +128,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.counter-up-number-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .counter-up-item {
   text-align: center;
 }
@@ -141,6 +146,9 @@
 .counter-up-title {
   color: #fff;
   font-size: 20px;
+}
+.odometer-inside {
+  font-family: $font-1;
 }
 // counter-up-section scss end
 

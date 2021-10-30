@@ -43,6 +43,10 @@ ul {
   list-style: none;
 }
 
+span {
+  margin-bottom: 0;
+}
+
 img {
   width: 100%;
 }
@@ -334,6 +338,18 @@ img {
   background-size: cover;
 }
 
+.counter-up-number-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .counter-up-item {
   text-align: center;
 }
@@ -349,6 +365,10 @@ img {
 .counter-up-title {
   color: #fff;
   font-size: 20px;
+}
+
+.odometer-inside {
+  font-family: "Playfair Display", serif;
 }
 
 .section-header {
