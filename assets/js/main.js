@@ -10,3 +10,10 @@ $(window).on("scroll", function(){
       }
 });
 
+// unvail lazy loader start
+// $("img").unveil(200, function() {
+//     $(this).load(function() {
+//       this.style.opacity = 1;
+//     });
+//   });   
+// unvail lazy loader end
