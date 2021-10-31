@@ -49,6 +49,9 @@ span {
 
 img {
   width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
 }
 
 .form-select:focus {
