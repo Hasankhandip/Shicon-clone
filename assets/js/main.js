@@ -1,3 +1,10 @@
+"use strict";
+// wow.js start
+new WOW().init();
+// wow.js end
+
+
+// odometer js start
 $(window).on("scroll", function(){
     if ($(this).scrollTop() > 1600) {
         setTimeout(function(){
@@ -9,6 +16,8 @@ $(window).on("scroll", function(){
            });
       }
 });
+// odometer js end
+
 
 // unvail lazy loader start
 $("img").unveil(200, function() {
