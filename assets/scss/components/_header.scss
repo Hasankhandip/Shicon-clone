@@ -11,8 +11,6 @@
   margin-right: 15px;
 }
 .header-contact-item {
-  display: flex;
-  align-items: center;
   padding: 0 25px;
   border-left: 3px solid #0749b5;
   border-right: 3px solid #77a8fa;
@@ -35,6 +33,16 @@
 }
 .header-logo {
   width: 180px;
+  &.remove {
+    display: none;
+  }
+}
+.header-logo-fixed {
+  width: 180px;
+  display: none;
+  &.active {
+    display: block;
+  }
 }
 .navbar {
   padding: 0;
@@ -45,19 +53,78 @@
   color: #575757 !important;
   padding: 10px 15px !important;
   transition: 0.4s;
-  &.active {
+  &.active-nav {
     color: #000 !important;
+    &.active {
+      color: #ffffff !important;
+    }
   }
   &:hover {
     color: #000 !important;
   }
+  &.active {
+    color: #e4e4e4 !important;
+    &:hover {
+      color: #fff !important;
+    }
+  }
+}
+.header-navbar {
+  padding: 20px 0;
+  background-color: #fff;
+  &.fixed {
+    background-color: $main-color;
+    position: fixed;
+    padding: 17px 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    animation: header-animation 0.5s linear !important;
+  }
+}
+.navbar-toggler-icon {
+  svg {
+    color: $main-color;
+  }
+}
+.header-contact-link {
+  display: flex;
+  align-items: center;
+}
+.header-search {
+  position: relative;
 }
 .header-serch-bar {
   font-size: 25px;
   margin-left: 30px;
   color: $main-color;
+  &.active {
+    color: #fff !important;
+  }
 }
-.header-navbar {
-  padding: 20px 0;
+.header-search-input-item {
+  position: absolute;
+  width: 350px;
+  top: 100px;
+  right: -100px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+  &.active {
+    top: 68px !important;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.4s;
+  }
 }
+.header-search-input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #0000001a;
+  &:focus {
+    outline: none;
+  }
+}
+
 //  header-navbar-top scss end

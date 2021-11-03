@@ -1,5 +1,38 @@
-@include media(1400px) {
-  .header-contact-item {
-    padding: 0px 23px;
+// max-width(991px) start
+
+@include media(991px) {
+  .navbar-toggler-icon {
+    svg {
+      font-size: 40px;
+    }
+  }
+  .navbar-toggler {
+    border: none;
+    padding: 0;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .navbar-collapse {
+    margin-top: 20px;
+  }
+  .header-contact-info {
+    display: none;
   }
 }
+// max-width(991px) end
+
+// max-width(767px) start
+@include media(767px) {
+  .header-contact-details {
+    display: none;
+  }
+  .header-contact-item {
+    padding: 0px 20px;
+    justify-content: center;
+  }
+  .header-contact-link {
+    justify-content: center;
+  }
+}
+// max-width(767px) end
