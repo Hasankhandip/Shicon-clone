@@ -425,6 +425,22 @@ img {
   color: #fff;
 }
 
+.header-responsive-search-input.active::-webkit-input-placeholder {
+  color: #ffffff !important;
+}
+
+.header-responsive-search-input.active:-ms-input-placeholder {
+  color: #ffffff !important;
+}
+
+.header-responsive-search-input.active::-ms-input-placeholder {
+  color: #ffffff !important;
+}
+
+.header-responsive-search-input.active::placeholder {
+  color: #ffffff !important;
+}
+
 .header-responsive-serch-bar {
   position: absolute;
   right: 15px;
