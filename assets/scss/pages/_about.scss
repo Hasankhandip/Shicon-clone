@@ -1,0 +1,50 @@
+// about-header-section scss start
+.about-banner-section {
+  padding-top: 194px;
+  padding-bottom: 194px;
+}
+.aboutpage-banner-title {
+  text-align: center;
+  font-family: $font-1;
+  font-size: 80px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.page-source-img {
+  width: auto;
+  margin: 0 12px;
+}
+.page-source-link {
+  font-size: 20px;
+  color: #000;
+}
+.actv-page-source {
+  color: $main-color;
+}
+.about-page-about-img-wrap {
+  position: relative;
+}
+.about-page-about-img {
+  width: 440px;
+  height: 440px;
+}
+.about-page-about-img-1 {
+  position: absolute;
+  top: 42%;
+  left: 15%;
+}
+.aboutpage-content-section {
+  padding-bottom: 180px;
+}
+.why-choose-us {
+  .about-title-top {
+    margin-bottom: 5px;
+  }
+  .about-title {
+    margin-bottom: 10px;
+  }
+  .about-title-icon {
+    margin-bottom: 40px;
+  }
+}
+// about-header-section scss end

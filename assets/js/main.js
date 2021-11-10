@@ -51,7 +51,6 @@ $(window).on("scroll", function(){
    $(".header-serch-bar-2").addClass("scroll-active-2");
    $(".nav-icon").addClass("active");
    $(".header-search-input").addClass("scroll-active");
-   $(".header-search-input-item.active").addClass("scroll-active");
    $(".header-responsive-search-input").addClass("active");
    $(".header-responsive-serch-bar").addClass("active");
   } else {
@@ -64,7 +63,6 @@ $(window).on("scroll", function(){
     $(".header-serch-bar-2").removeClass("scroll-active-2");
     $(".nav-icon").removeClass("active");
     $(".header-search-input").removeClass("scroll-active");
-    $(".header-search-input-item.active").removeClass("scroll-active");
     $(".header-responsive-search-input").removeClass("active");
     $(".header-responsive-serch-bar").removeClass("active");
   }

@@ -24,25 +24,48 @@
   background-color: transparent;
   margin-top: -125px;
   padding-bottom: 120px;
+  .container {
+    width: 1106px;
+  }
 }
 .place-search-input {
   color: #6e6e6e;
   font-size: 16px;
   width: 100%;
   padding: 12px;
-  border-left: 1px solid rgba(0, 0, 0, 0.103) !important;
-  border-right: 1px solid rgba(0, 0, 0, 0.103) !important;
+  border: 1px solid rgba(0, 0, 0, 0.103) !important;
   border: none;
+  &.form-select {
+    background-image: none !important;
+    border-radius: 0;
+  }
   &:focus {
     outline: none;
   }
 }
 .place-search-item-wrapper {
   padding: 100px 15px;
-  background-color: #fff;
+  background-color: #f5f8fd;
+  box-shadow: 0px 0px 5px 1px rgba(164, 164, 164, 0.25);
+}
+.place-search-item-area {
+  display: flex;
+  .place-search-item {
+    margin: 0 5px;
+    &:nth-child(1) {
+      width: 339px !important;
+    }
+    &:nth-child(2) {
+      width: 271px !important;
+    }
+    &:nth-child(3) {
+      width: 271px !important;
+    }
+  }
 }
 .place-search-item {
   position: relative;
+  padding: 0;
 }
 .place-search-input-icon {
   font-size: 20px;
@@ -216,6 +239,7 @@
 }
 .destination-details {
   padding: 25px;
+  box-shadow: 0px 0px 71.1px 7.9px rgba(0, 0, 0, 0.07);
 }
 .destination-time {
   font-size: 15px;
@@ -238,13 +262,17 @@
 
 //  booking-section scss start
 .booking-section {
-  padding-bottom: 120px;
+  position: relative;
 }
 .booking-input-title {
   margin-bottom: 10px;
 }
 .booking-form {
   margin-bottom: 30px;
+}
+.booking-form-area > * {
+  padding-right: calc(var(--bs-gutter-x) * 0.4);
+  padding-left: calc(var(--bs-gutter-x) * 0.4);
 }
 .booking-text-message {
   height: 150px;
@@ -255,11 +283,13 @@
   z-index: 1;
 }
 .booking-img-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
-  width: 100%;
+  width: 45%;
   height: 100%;
   right: 120px;
   z-index: -1;
@@ -272,10 +302,21 @@
   transform: translate(-55%, -50%);
   border: 20px solid #fff;
 }
+.booking-img-bg-responsive {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  right: 120px;
+  z-index: -1;
+}
 //  booking-section scss end
 
 // team-section scss start
 .team-section {
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 .team-item {
@@ -372,6 +413,7 @@
 .feedback-section {
   padding-top: 100px;
   padding-bottom: 100px;
+  background-color: #f9f9f9;
 }
 .feedback-item-title {
   text-align: center;
@@ -379,7 +421,10 @@
 }
 .feedback-item-top {
   position: relative;
-  padding: 45px 10px;
+  padding-top: 45px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 55px;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.103);
   transition: 0.4s;
@@ -388,7 +433,7 @@
     content: "";
     position: absolute;
     right: 25px;
-    bottom: 20px;
+    bottom: 25px;
     width: 13px;
     height: 28px;
     border-radius: 30px 0 0 0;
@@ -399,7 +444,7 @@
     content: "";
     position: absolute;
     right: 45px;
-    bottom: 20px;
+    bottom: 25px;
     width: 13px;
     height: 28px;
     border-radius: 30px 0 0 0;
@@ -453,6 +498,7 @@
 }
 .blog-caption {
   padding: 30px;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.07);
 }
 .blog-post-time {
   svg {

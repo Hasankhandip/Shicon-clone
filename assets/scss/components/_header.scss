@@ -75,7 +75,6 @@
   &.fixed {
     background-color: $main-color;
     position: fixed;
-    padding: 17px 0;
     top: 0;
     left: 0;
     width: 100%;
@@ -125,12 +124,8 @@
   opacity: 0;
   visibility: hidden;
   transition: 0.4s;
-  &.scroll-active {
-    top: 64px !important;
-    transition: 0.4s;
-  }
   &.active {
-    top: 68px;
+    top: 67px;
     opacity: 1;
     visibility: visible;
     transition: 0.4s;

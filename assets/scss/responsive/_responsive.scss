@@ -1,5 +1,30 @@
 // max-width(991px) start
 
+@include media(1199px) {
+  .header-btn-link {
+    padding: 9px 20px;
+  }
+  .about-page-about-img {
+    display: none;
+  }
+  .about-page-about-img-1 {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .aboutpage-content-section {
+    .container {
+      .row {
+        align-items: center;
+      }
+    }
+  }
+  .aboutpage-content-section {
+    padding-bottom: 100px;
+  }
+}
+
 @include media(991px) {
   .navbar-toggler-icon {
     svg {
@@ -30,6 +55,63 @@
   .header-responsive-search {
     display: block;
   }
+  .banner-section {
+    padding-top: 150px;
+    padding-bottom: 250px;
+  }
+  .place-search-item-wrapper {
+    padding: 80px 15px;
+  }
+  .about-details {
+    margin-top: 40px;
+  }
+  .about-item {
+    margin-bottom: 40px;
+  }
+  .booking-img-wrap {
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, 15%);
+  }
+  .booking-img {
+    position: relative;
+    left: 50%;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, 0%);
+  }
+  .booking-img-bg {
+    width: 100%;
+    height: 800px;
+  }
+  .footer-item {
+    margin-bottom: 45px;
+  }
+  .company-partner-item {
+    margin-bottom: 40px;
+  }
+  .company-partner-item-wrap {
+    margin: 0;
+    .w-20 {
+      flex: 0 0 auto !important;
+      width: 33.33333333% !important;
+    }
+  }
+  .company-partner-section {
+    padding-bottom: 60px;
+  }
+  .aboutpage-banner-title {
+    font-size: 70px;
+  }
+  .about-page-about-img-1 {
+    width: 100%;
+  }
+  .team-item {
+    margin-bottom: 45px;
+  }
+  .blog-item {
+    margin-bottom: 45px;
+  }
 }
 // max-width(991px) end
 
@@ -58,6 +140,9 @@
   .place-search-section {
     padding-bottom: 60px;
   }
+  .booking-img-bg {
+    height: 600px;
+  }
   .about-img {
     margin-bottom: 45px;
   }
@@ -70,8 +155,9 @@
   .counter-up-item {
     margin-bottom: 35px;
   }
-  .about-details {
-    margin-top: 45px;
+  .team-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   .team-item {
     text-align: center;
@@ -84,7 +170,7 @@
     margin-bottom: 30px;
   }
   .blog-section {
-    padding-top: 0;
+    padding-top: 100px;
   }
   .blog-item {
     margin-bottom: 35px;
@@ -154,6 +240,15 @@
   .footer-section-padding {
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+  .w-20 {
+    width: 100% !important;
+  }
+  .place-search-section .container {
+    width: auto;
+  }
+  .about-page-header > * {
+    width: 50%;
   }
 }
 // max-width(575px) end

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap");
 @-webkit-keyframes header-animation {
   0% {
     -webkit-transform: translateY(0);
@@ -173,7 +173,7 @@ img {
 
 .main-btn-link {
   color: #fff;
-  padding: 7px 20px;
+  padding: 9px 35px;
   border: 2px solid #fff;
   background-color: #4285f4;
 }
@@ -294,7 +294,6 @@ img {
 .header-navbar.fixed {
   background-color: #4285f4;
   position: fixed;
-  padding: 17px 0;
   top: 0;
   left: 0;
   width: 100%;
@@ -360,14 +359,8 @@ img {
   transition: 0.4s;
 }
 
-.header-search-input-item.scroll-active {
-  top: 64px !important;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
 .header-search-input-item.active {
-  top: 68px;
+  top: 67px;
   opacity: 1;
   visibility: visible;
   -webkit-transition: 0.4s;
@@ -485,14 +478,22 @@ img {
   padding-bottom: 120px;
 }
 
+.place-search-section .container {
+  width: 1106px;
+}
+
 .place-search-input {
   color: #6e6e6e;
   font-size: 16px;
   width: 100%;
   padding: 12px;
-  border-left: 1px solid rgba(0, 0, 0, 0.103) !important;
-  border-right: 1px solid rgba(0, 0, 0, 0.103) !important;
+  border: 1px solid rgba(0, 0, 0, 0.103) !important;
   border: none;
+}
+
+.place-search-input.form-select {
+  background-image: none !important;
+  border-radius: 0;
 }
 
 .place-search-input:focus {
@@ -501,11 +502,36 @@ img {
 
 .place-search-item-wrapper {
   padding: 100px 15px;
-  background-color: #fff;
+  background-color: #f5f8fd;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(164, 164, 164, 0.25);
+          box-shadow: 0px 0px 5px 1px rgba(164, 164, 164, 0.25);
+}
+
+.place-search-item-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.place-search-item-area .place-search-item {
+  margin: 0 5px;
+}
+
+.place-search-item-area .place-search-item:nth-child(1) {
+  width: 339px !important;
+}
+
+.place-search-item-area .place-search-item:nth-child(2) {
+  width: 271px !important;
+}
+
+.place-search-item-area .place-search-item:nth-child(3) {
+  width: 271px !important;
 }
 
 .place-search-item {
   position: relative;
+  padding: 0;
 }
 
 .place-search-input-icon {
@@ -531,7 +557,7 @@ img {
 }
 
 .about-title-top {
-  font-family: "Dancing Script", cursive;
+  font-family: "Pinyon Script", cursive;
   font-size: 25px;
   color: #4285f4;
   margin-bottom: 15px;
@@ -646,7 +672,7 @@ img {
 
 .section-header-top {
   font-size: 30px;
-  font-family: "Dancing Script", cursive;
+  font-family: "Pinyon Script", cursive;
   color: #4285f4;
   margin-bottom: 10px;
 }
@@ -716,6 +742,8 @@ img {
 
 .destination-details {
   padding: 25px;
+  -webkit-box-shadow: 0px 0px 71.1px 7.9px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 0px 71.1px 7.9px rgba(0, 0, 0, 0.07);
 }
 
 .destination-time {
@@ -740,7 +768,7 @@ img {
 }
 
 .booking-section {
-  padding-bottom: 120px;
+  position: relative;
 }
 
 .booking-input-title {
@@ -749,6 +777,11 @@ img {
 
 .booking-form {
   margin-bottom: 30px;
+}
+
+.booking-form-area > * {
+  padding-right: calc(var(--bs-gutter-x) * 0.4);
+  padding-left: calc(var(--bs-gutter-x) * 0.4);
 }
 
 .booking-text-message {
@@ -762,11 +795,13 @@ img {
 }
 
 .booking-img-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
-  width: 100%;
+  width: 45%;
   height: 100%;
   right: 120px;
   z-index: -1;
@@ -782,7 +817,19 @@ img {
   border: 20px solid #fff;
 }
 
+.booking-img-bg-responsive {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  right: 120px;
+  z-index: -1;
+}
+
 .team-section {
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -899,6 +946,7 @@ img {
 .feedback-section {
   padding-top: 100px;
   padding-bottom: 100px;
+  background-color: #f9f9f9;
 }
 
 .feedback-item-title {
@@ -908,7 +956,10 @@ img {
 
 .feedback-item-top {
   position: relative;
-  padding: 45px 10px;
+  padding-top: 45px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 55px;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.103);
   -webkit-transition: 0.4s;
@@ -920,7 +971,7 @@ img {
   content: "";
   position: absolute;
   right: 25px;
-  bottom: 20px;
+  bottom: 25px;
   width: 13px;
   height: 28px;
   border-radius: 30px 0 0 0;
@@ -933,7 +984,7 @@ img {
   content: "";
   position: absolute;
   right: 45px;
-  bottom: 20px;
+  bottom: 25px;
   width: 13px;
   height: 28px;
   border-radius: 30px 0 0 0;
@@ -1002,6 +1053,8 @@ img {
 
 .blog-caption {
   padding: 30px;
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.07);
 }
 
 .blog-post-time svg {
@@ -1149,6 +1202,87 @@ img {
   background-color: rgba(255, 255, 255, 0.031);
 }
 
+.about-banner-section {
+  padding-top: 194px;
+  padding-bottom: 194px;
+}
+
+.aboutpage-banner-title {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 80px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.page-source-img {
+  width: auto;
+  margin: 0 12px;
+}
+
+.page-source-link {
+  font-size: 20px;
+  color: #000;
+}
+
+.actv-page-source {
+  color: #4285f4;
+}
+
+.about-page-about-img-wrap {
+  position: relative;
+}
+
+.about-page-about-img {
+  width: 440px;
+  height: 440px;
+}
+
+.about-page-about-img-1 {
+  position: absolute;
+  top: 42%;
+  left: 15%;
+}
+
+.aboutpage-content-section {
+  padding-bottom: 180px;
+}
+
+.why-choose-us .about-title-top {
+  margin-bottom: 5px;
+}
+
+.why-choose-us .about-title {
+  margin-bottom: 10px;
+}
+
+.why-choose-us .about-title-icon {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1199px) {
+  .header-btn-link {
+    padding: 9px 20px;
+  }
+  .about-page-about-img {
+    display: none;
+  }
+  .about-page-about-img-1 {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .aboutpage-content-section .container .row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutpage-content-section {
+    padding-bottom: 100px;
+  }
+}
+
 @media (max-width: 991px) {
   .navbar-toggler-icon svg {
     font-size: 40px;
@@ -1175,6 +1309,67 @@ img {
   }
   .header-responsive-search {
     display: block;
+  }
+  .banner-section {
+    padding-top: 150px;
+    padding-bottom: 250px;
+  }
+  .place-search-item-wrapper {
+    padding: 80px 15px;
+  }
+  .about-details {
+    margin-top: 40px;
+  }
+  .about-item {
+    margin-bottom: 40px;
+  }
+  .booking-img-wrap {
+    left: 50%;
+    top: 55%;
+    -webkit-transform: translate(-50%, 15%);
+            transform: translate(-50%, 15%);
+  }
+  .booking-img {
+    position: relative;
+    left: 50%;
+    top: 0;
+    right: 0;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+  .booking-img-bg {
+    width: 100%;
+    height: 800px;
+  }
+  .footer-item {
+    margin-bottom: 45px;
+  }
+  .company-partner-item {
+    margin-bottom: 40px;
+  }
+  .company-partner-item-wrap {
+    margin: 0;
+  }
+  .company-partner-item-wrap .w-20 {
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 auto !important;
+            flex: 0 0 auto !important;
+    width: 33.33333333% !important;
+  }
+  .company-partner-section {
+    padding-bottom: 60px;
+  }
+  .aboutpage-banner-title {
+    font-size: 70px;
+  }
+  .about-page-about-img-1 {
+    width: 100%;
+  }
+  .team-item {
+    margin-bottom: 45px;
+  }
+  .blog-item {
+    margin-bottom: 45px;
   }
 }
 
@@ -1206,6 +1401,9 @@ img {
   .place-search-section {
     padding-bottom: 60px;
   }
+  .booking-img-bg {
+    height: 600px;
+  }
   .about-img {
     margin-bottom: 45px;
   }
@@ -1218,8 +1416,9 @@ img {
   .counter-up-item {
     margin-bottom: 35px;
   }
-  .about-details {
-    margin-top: 45px;
+  .team-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   .team-item {
     text-align: center;
@@ -1232,7 +1431,7 @@ img {
     margin-bottom: 30px;
   }
   .blog-section {
-    padding-top: 0;
+    padding-top: 100px;
   }
   .blog-item {
     margin-bottom: 35px;
@@ -1301,6 +1500,15 @@ img {
   .footer-section-padding {
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+  .w-20 {
+    width: 100% !important;
+  }
+  .place-search-section .container {
+    width: auto;
+  }
+  .about-page-header > * {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */
