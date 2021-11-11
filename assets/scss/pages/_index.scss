@@ -206,19 +206,22 @@
   padding-bottom: 115px;
 }
 .destination-details-wrap {
-  [class*="col-"]:nth-of-type(2) .destination-price {
+  [class*="col-"]:nth-of-type(6n + 1) .destination-price {
+    background-color: #4284f3;
+  }
+  [class*="col-"]:nth-of-type(6n + 2) .destination-price {
     background-color: #ef4676;
   }
-  [class*="col-"]:nth-of-type(3) .destination-price {
+  [class*="col-"]:nth-of-type(6n + 3) .destination-price {
     background-color: #e67e22;
   }
-  [class*="col-"]:nth-of-type(4) .destination-price {
+  [class*="col-"]:nth-of-type(6n + 4) .destination-price {
     background-color: #e67e22;
   }
-  [class*="col-"]:nth-of-type(5) .destination-price {
+  [class*="col-"]:nth-of-type(6n + 5) .destination-price {
     background-color: #1abc9c;
   }
-  [class*="col-"]:nth-of-type(6) .destination-price {
+  [class*="col-"]:nth-of-type(6n + 6) .destination-price {
     background-color: #1abc9c;
   }
 }

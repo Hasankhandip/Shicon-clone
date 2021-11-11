@@ -1,0 +1,34 @@
+//  destination-page-destination-section scss start
+.destination-page-destination-section {
+  padding-top: 0;
+  .place-search-item-wrapper {
+    padding: 0;
+    background-color: #fff;
+    box-shadow: none;
+  }
+  .place-search-item {
+    margin-left: 0;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .btn-2 {
+    padding: 12px 66px;
+  }
+  .place-search-item-area {
+    margin-bottom: 50px;
+  }
+  .place-search-item {
+    &:nth-child(1) {
+      width: 345px !important;
+    }
+    &:nth-child(2) {
+      width: 280px !important;
+    }
+    &:nth-child(3) {
+      width: 280px !important;
+    }
+  }
+}
+//  destination-page-destination-section scss end
