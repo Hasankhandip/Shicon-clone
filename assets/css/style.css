@@ -1284,6 +1284,9 @@ img {
 }
 
 @media (max-width: 991px) {
+  .header-navbar {
+    padding: 12px 0;
+  }
   .navbar-toggler-icon svg {
     font-size: 40px;
   }
@@ -1454,6 +1457,9 @@ img {
   .header-logo {
     width: 160px;
   }
+  .aboutpage-banner-title {
+    font-size: 50px;
+  }
   .booking-img-bg {
     right: 0;
     top: 0;
@@ -1479,7 +1485,7 @@ img {
     margin: 0 5px;
   }
   .about-item-wrap {
-    padding-bottom: 70px;
+    padding-bottom: 100px;
   }
   .destination-section {
     padding-top: 80px;
@@ -1507,8 +1513,33 @@ img {
   .place-search-section .container {
     width: auto;
   }
-  .about-page-header > * {
-    width: 50%;
+  .about-hdr-btn {
+    display: none;
+  }
+  .about-hdr-btn-mobile {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .aboutpage-banner-title {
+    font-size: 40px;
+  }
+  .place-search-item-wrapper {
+    padding: 50px 15px;
+  }
+  .place-search-section {
+    margin-top: -110px;
+  }
+  .about-title {
+    font-size: 40px;
+  }
+  .section-title {
+    font-size: 40px;
+  }
+  .footer-section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
