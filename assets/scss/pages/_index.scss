@@ -49,14 +49,16 @@
   box-shadow: 0px 0px 5px 1px rgba(164, 164, 164, 0.25);
   justify-content: space-evenly;
   .place-search-item {
-    position: relative;
-    padding: 0;
-    margin: 0 5px;
     width: 27% !important;
-    &:last-child{
+    &:last-child {
       width: 14% !important;
     }
   }
+}
+.place-search-item {
+  position: relative;
+  padding: 0;
+  margin: 0 5px;
 }
 
 .place-search-input-icon {
@@ -496,7 +498,7 @@
   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.07);
 }
 .blog-post-time {
-  svg {
+  i {
     color: #575757;
     margin-right: 5px;
   }
