@@ -105,10 +105,6 @@ img {
           box-shadow: none;
 }
 
-svg {
-  width: 10px;
-}
-
 .scroll-top {
   position: fixed;
   bottom: 100%;
@@ -306,6 +302,7 @@ svg {
 
 .nav-icon {
   color: #4285f4;
+  font-size: 40px;
 }
 
 .header-contact-link {
