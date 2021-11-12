@@ -35,6 +35,9 @@
   padding: 12px;
   border: 1px solid rgba(0, 0, 0, 0.103) !important;
   border: none;
+  &::placeholder {
+    color: rgb(41, 41, 41);
+  }
   &.form-select {
     background-image: none !important;
     border-radius: 0;

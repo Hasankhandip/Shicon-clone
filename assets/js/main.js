@@ -26,17 +26,18 @@ $(".scroll-top").on("click", function () {
 // scroll-top btn end
 
 // odometer js start
-$(window).on("scroll", function(){
-    if ($(this).scrollTop() > 1600) {
-        setTimeout(function(){
-            odometer1.innerHTML = 456;
-            odometer2.innerHTML = 25;
-            odometer3.innerHTML = 459;
-            odometer4.innerHTML = 226;
-            odometer5.innerHTML = 158;
-           });
-      }
-});
+(function() {
+  $(".overview-counter-up").each(function () {
+      $(this).isInViewport(function(status) {
+          if (status === "entered") {
+              for( var i=0; i < document.querySelectorAll(".odometer").length; i++ ){
+                  var el = document.querySelectorAll('.odometer')[i];
+                  el.innerHTML = el.getAttribute("data-odometer-final");
+              }
+          }
+      });
+  });
+})();
 // odometer js end
 
 // header-navbar js start

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @-webkit-keyframes header-animation {
   0% {
     -webkit-transform: translateY(0);
@@ -457,7 +458,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 .pagination-link {
@@ -524,6 +525,22 @@ img {
   padding: 12px;
   border: 1px solid rgba(0, 0, 0, 0.103) !important;
   border: none;
+}
+
+.place-search-input::-webkit-input-placeholder {
+  color: #292929;
+}
+
+.place-search-input:-ms-input-placeholder {
+  color: #292929;
+}
+
+.place-search-input::-ms-input-placeholder {
+  color: #292929;
+}
+
+.place-search-input::placeholder {
+  color: #292929;
 }
 
 .place-search-input.form-select {
@@ -1241,7 +1258,7 @@ img {
   font-family: "Playfair Display", serif;
   font-size: 80px;
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .page-source-img {
@@ -1324,6 +1341,101 @@ img {
 
 .blog-page-blog-section .blog-item {
   margin-bottom: 45px;
+}
+
+.contact-page-contact-section {
+  padding-bottom: 100px;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 580px;
+}
+
+.contact-info-title {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-details-img {
+  width: auto;
+  margin-right: 15px;
+}
+
+.contact-details-item {
+  margin-bottom: 20px;
+}
+
+.contact-info-details {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-details-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contact-details-title {
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 10px;
+}
+
+.contact-details-info {
+  color: #515151;
+  font-family: "Raleway", sans-serif;
+}
+
+.contact-hotline {
+  text-align: center;
+  padding: 25px;
+  background-color: #4285f4;
+}
+
+.hotline-title {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: #fff;
+}
+
+.hotline-title-details {
+  color: #fff;
+}
+
+.hotline-number {
+  font-family: "Raleway", sans-serif;
+  font-size: 35px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.hotline-number:hover {
+  color: #fff;
+}
+
+.contact-page-contact-form {
+  margin-top: 60px;
+}
+
+.contact-form-title {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.conatact-input {
+  margin-bottom: 25px;
 }
 
 @media (max-width: 1400px) {

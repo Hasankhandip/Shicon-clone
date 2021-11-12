@@ -1,0 +1,71 @@
+.contact-page-contact-section {
+  padding-bottom: 100px;
+}
+.contact-map {
+  iframe {
+    width: 100%;
+    height: 580px;
+  }
+}
+.contact-info-title {
+  font-family: $font-1;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.contact-details-img {
+  width: auto;
+  margin-right: 15px;
+}
+.contact-details-item {
+  margin-bottom: 20px;
+}
+.contact-info-details {
+  flex-direction: column;
+  display: flex;
+}
+.contact-details-link {
+  display: flex;
+  align-items: flex-start;
+}
+.contact-details-title {
+  font-size: 20px;
+  font-family: $font-1;
+  margin-bottom: 10px;
+}
+.contact-details-info {
+  color: #515151;
+  font-family: $font-2;
+}
+.contact-hotline {
+  text-align: center;
+  padding: 25px;
+  background-color: $main-color;
+}
+.hotline-title {
+  font-family: $font-1;
+  font-size: 30px;
+  color: #fff;
+}
+.hotline-title-details {
+  color: #fff;
+}
+.hotline-number {
+  font-family: $font-2;
+  font-size: 35px;
+  margin-top: 20px;
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+.contact-page-contact-form {
+  margin-top: 60px;
+}
+.contact-form-title {
+  font-family: $font-1;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.conatact-input {
+  margin-bottom: 25px;
+}
