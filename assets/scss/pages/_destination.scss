@@ -5,6 +5,7 @@
     padding: 0;
     background-color: #fff;
     box-shadow: none;
+    margin-bottom: 80px;
   }
   .place-search-item {
     margin-left: 0;
@@ -19,16 +20,6 @@
   .place-search-item-area {
     margin-bottom: 50px;
   }
-  .place-search-item {
-    &:nth-child(1) {
-      width: 345px !important;
-    }
-    &:nth-child(2) {
-      width: 280px !important;
-    }
-    &:nth-child(3) {
-      width: 280px !important;
-    }
-  }
+
 }
 //  destination-page-destination-section scss end

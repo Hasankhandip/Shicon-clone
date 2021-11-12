@@ -65,6 +65,12 @@
   .place-search-item-wrapper {
     padding: 80px 15px;
   }
+  .place-search-item{
+    width: 24% !important;
+    &:last-child {
+    width: 21% !important;
+}
+  }
   .about-details {
     margin-top: 40px;
   }
@@ -137,11 +143,29 @@
     padding-top: 185px;
     padding-bottom: 320px;
   }
-  .place-search-item {
-    margin-bottom: 25px;
-  }
   .place-search-section {
     padding-bottom: 60px;
+  }
+  .place-search-item{
+    margin-bottom: 25px;
+    width: 100% !important;
+    &:nth-child(2){
+      width: 48% !important;
+    }
+    &:nth-child(3){
+      width: 48% !important;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    width: 100% !important;
+    }
+  }
+  .place-search-item-wrapper {
+    padding: 70px 15px;
+    justify-content: center;
+  }
+  .place-search-btn-responsive{
+    text-align: center;
   }
   .booking-img-bg {
     height: 600px;
@@ -252,6 +276,19 @@
   }
   .place-search-section .container {
     width: auto;
+  }
+  .place-search-section {
+    margin-top: -190px;
+  }
+  .place-search-item{
+    width: 100% !important;
+    &:nth-child(2){
+      width: 100% !important;
+    }
+    &:nth-child(3){
+      width: 100% !important;
+    }
+
   }
   .about-hdr-btn {
     display: none;
