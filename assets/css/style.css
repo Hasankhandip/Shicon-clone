@@ -539,18 +539,15 @@ img {
           justify-content: space-evenly;
 }
 
-.place-search-item {
+.place-search-item-wrapper .place-search-item {
+  position: relative;
+  padding: 0;
   margin: 0 5px;
   width: 27% !important;
 }
 
-.place-search-item:last-child {
+.place-search-item-wrapper .place-search-item:last-child {
   width: 14% !important;
-}
-
-.place-search-item {
-  position: relative;
-  padding: 0;
 }
 
 .place-search-input-icon {
