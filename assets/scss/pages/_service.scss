@@ -1,0 +1,29 @@
+// service-section scss start
+.service-section {
+  .about-item-wrap {
+    padding-bottom: 100px;
+  }
+  .about-item {
+    text-align: center;
+    padding: 30px;
+    transition: 0.4s;
+    margin-bottom: 45px;
+    &:hover {
+      box-shadow: 0px 0px 81px 9px rgba(0, 0, 0, 0.06);
+    }
+  }
+  .blog-text {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .blog-item {
+    margin-bottom: 45px;
+  }
+  .blog-caption {
+    text-align: center;
+  }
+}
+.service-page-service-section {
+  margin-bottom: 80px;
+}
+// service-section scss end

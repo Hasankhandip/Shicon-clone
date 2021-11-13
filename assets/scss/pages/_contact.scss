@@ -1,6 +1,10 @@
 .contact-page-contact-section {
   padding-bottom: 100px;
 }
+.row.contact-page-contact-form > * {
+  padding-right: calc(var(--bs-gutter-x) * 0.3) !important;
+  padding-left: calc(var(--bs-gutter-x) * 0.3) !important;
+}
 .contact-map {
   iframe {
     width: 100%;

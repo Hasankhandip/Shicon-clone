@@ -47,12 +47,80 @@
 .navbar {
   padding: 0;
 }
+.nav-item {
+  position: relative;
+  &:hover {
+    .dropdown-navbar {
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+  }
+}
+.dropdown-navbar {
+  width: 250px;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: 0.4s;
+}
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: 73px;
+  &.show {
+    margin: 0;
+    top: 73px;
+  }
+}
+// nav responsive thikthak korar
+.dropdown-navbar.dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  padding: 0;
+}
+.dropdown-nav-item {
+  background-color: #fff;
+  transition: 0.4s;
+  &.active {
+    background-color: $main-color;
+  }
+  &:hover {
+    background-color: $main-color;
+    .dropdown-nav-link {
+      font-family: $font-1;
+      font-size: 20px;
+      color: #575757 !important;
+      padding: 10px 15px !important;
+      transition: 0.4s;
+      color: #fff !important;
+    }
+  }
+}
+.dropdown-nav-link {
+  width: 100%;
+  font-family: $font-1;
+  font-size: 20px;
+  color: #575757 !important;
+  padding: 10px 15px !important;
+  transition: 0.4s;
+  &.active {
+    color: #fff !important;
+  }
+}
 .nav-link {
   font-family: $font-1;
   font-size: 20px;
   color: #575757 !important;
   padding: 10px 15px !important;
   transition: 0.4s;
+  i {
+    color: #575757 !important;
+    margin-left: 5px;
+    font-size: 17px;
+    &.active {
+      color: #ffffff !important;
+    }
+  }
   &.active-nav {
     color: #000 !important;
     &.active {

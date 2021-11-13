@@ -47,6 +47,9 @@ $(window).on("scroll", function(){
    $(".header-logo").addClass("remove");
    $(".header-logo-fixed").addClass("active");
    $(".nav-link").addClass("active");
+   $(".nav-link i").addClass("active");
+   $(".dropdown-nav-link").addClass("active");
+   $(".dropdown-nav-item").addClass("active");
    $(".active-nav").addClass("active");
    $(".header-serch-bar").addClass("active");
    $(".header-serch-bar-2").addClass("scroll-active-2");
@@ -59,6 +62,9 @@ $(window).on("scroll", function(){
     $(".header-logo").removeClass("remove");
     $(".header-logo-fixed").removeClass("active");
     $(".nav-link").removeClass("active");
+    $(".nav-link i").removeClass("active");
+    $(".dropdown-nav-link").removeClass("active");
+    $(".dropdown-nav-item").removeClass("active");
     $(".active-nav").removeClass("active");
     $(".header-serch-bar").removeClass("active");
     $(".header-serch-bar-2").removeClass("scroll-active-2");
