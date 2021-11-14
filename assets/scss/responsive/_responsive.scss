@@ -159,6 +159,24 @@
   .blog-item {
     margin-bottom: 45px;
   }
+  .dropdown-nav-item {
+    &:hover {
+      background-color: #fff !important;
+      .dropdown-nav-link {
+        color: #000 !important;
+      }
+    }
+  }
+  .dropdown-nav-link {
+    &.active {
+      background-color: $main-color;
+      color: #e4e4e4 !important;
+      &:hover {
+        color: #fff !important;
+        background-color: $main-color !important;
+      }
+    }
+  }
 }
 // max-width(991px) end
 

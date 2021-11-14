@@ -66,6 +66,7 @@
   position: absolute;
   left: 0;
   top: 73px;
+  border: none;
   &.show {
     margin: 0;
     top: 73px;
@@ -103,8 +104,18 @@
   color: #575757 !important;
   padding: 10px 15px !important;
   transition: 0.4s;
+  i {
+    margin-right: 5px;
+    font-size: 15px;
+    transition: 0.4s;
+  }
   &.active {
     color: #fff !important;
+    transition: 0.4s;
+    &:hover {
+      background-color: #fff !important;
+      color: $main-color !important;
+    }
   }
 }
 .nav-link {
@@ -113,14 +124,6 @@
   color: #575757 !important;
   padding: 10px 15px !important;
   transition: 0.4s;
-  i {
-    color: #575757 !important;
-    margin-left: 5px;
-    font-size: 17px;
-    &.active {
-      color: #ffffff !important;
-    }
-  }
   &.active-nav {
     color: #000 !important;
     &.active {
@@ -129,11 +132,23 @@
   }
   &:hover {
     color: #000 !important;
+    i {
+      color: #000 !important;
+    }
   }
   &.active {
     color: #e4e4e4 !important;
     &:hover {
       color: #fff !important;
+    }
+  }
+  i {
+    color: #5c5c5c !important;
+    margin-left: 5px;
+    font-size: 15px;
+    transition: 0.4s;
+    &.active {
+      color: #e4e4e4 !important;
     }
   }
 }

@@ -1,0 +1,20 @@
+.search-result-section {
+  padding-bottom: 110px;
+}
+.search-result-item {
+  margin-bottom: 50px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.search-result-title {
+  font-family: $font-1;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+.search-result-details {
+  a {
+    color: $main-color;
+  }
+}

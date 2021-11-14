@@ -229,7 +229,7 @@
   font-size: 24px;
   font-family: $font-1;
   margin-bottom: 15px;
-  svg {
+  i {
     color: $main-color !important;
   }
 }
@@ -243,9 +243,11 @@
 }
 .destination-time {
   font-size: 15px;
-  svg {
-    color: $main-color;
-    opacity: 0.6;
+  color: #555;
+  font-weight: 600;
+  margin-right: 10px;
+  i {
+    color: #c9ddfe;
   }
 }
 .destination-price {
@@ -494,7 +496,6 @@
 }
 .blog-post-details {
   display: flex;
-  justify-content: space-between;
 }
 .blog-caption {
   padding: 30px;
@@ -502,13 +503,15 @@
 }
 .blog-post-time {
   i {
-    color: #575757;
-    margin-right: 5px;
+    color: #c6c5c5;
+    margin-right: 2px;
   }
 }
 .blog-text {
-  margin-top: 50px;
   margin-bottom: 20px;
+}
+.blog-divider {
+  margin: 25px 0;
 }
 .blog-btn {
   color: $main-color;
