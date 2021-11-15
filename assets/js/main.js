@@ -3,6 +3,24 @@
 new WOW().init();
 // wow.js end
 
+
+// preloader start
+$(window).on("load", function () {
+  $(".preloader")
+    .delay(500)
+    .animate(
+      {
+        opacity: "0",
+      },
+      500,
+      function () {
+        $(".preloader").css("display", "none");
+      }
+    );
+});
+// preloader end
+
+
 // unvail lazy loader start
 $("img").unveil(200, function() {
   $(this).load(function() {

@@ -554,6 +554,81 @@ img {
   display: none;
 }
 
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 99;
+}
+
+.loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #4285f4;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #575757;
+  -webkit-animation: spin 3s linear infinite;
+          animation: spin 3s linear infinite;
+}
+
+.loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #4285f4;
+  -webkit-animation: spin 1.5s linear infinite;
+          animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .pagination-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -931,8 +1006,8 @@ img {
 }
 
 .booking-form-area > * {
-  padding-right: calc(var(--bs-gutter-x) * 0.4);
-  padding-left: calc(var(--bs-gutter-x) * 0.4);
+  padding-right: calc(var(--bs-gutter-x) * 0.1);
+  padding-left: calc(var(--bs-gutter-x) * 0.1);
 }
 
 .booking-text-message {
@@ -1600,8 +1675,124 @@ img {
   margin-bottom: 25px;
 }
 
+.search-result-details {
+  font-family: "Raleway", sans-serif;
+}
+
 .search-result-details a {
   color: #4285f4;
+}
+
+.book-page-section {
+  padding-bottom: 110px;
+}
+
+.book-page-section .about-title {
+  font-size: 30px;
+}
+
+.ship-booking {
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.ship-img-price {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.ship-details p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.ship-price-details {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  background-color: #4285f4;
+  display: inline-block;
+  color: #fff;
+  padding: 2px 20px;
+  border-radius: 5px;
+}
+
+.ship-img-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ship-img-details li {
+  margin-right: 5px;
+}
+
+.ship-img-details a {
+  position: relative;
+  z-index: 1;
+}
+
+.ship-img-details a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4285f4;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.ship-img-details a:hover::before {
+  opacity: 0.7;
+  visibility: visible;
+}
+
+.faq-list-item {
+  margin-bottom: 50px;
+}
+
+.faq-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.faq-list-item .search-result-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+}
+
+.faq-list-item .search-result-item .search-result-title {
+  margin-bottom: 0;
+}
+
+.faq-list-item .search-result-details {
+  margin-left: 110px;
+}
+
+.faq-list-number {
+  padding: 16px 19px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 25.23px 3.77px rgba(164, 164, 164, 0.18);
+          box-shadow: 0px 0px 25.23px 3.77px rgba(164, 164, 164, 0.18);
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.faq-list-number h4 {
+  font-size: 52px;
+  font-family: "Playfair Display", serif;
+  color: #777777;
 }
 
 @media (max-width: 1400px) {
@@ -1991,6 +2182,20 @@ img {
   .footer-section-padding {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .faq-list-item .search-result-item {
+    display: block;
+  }
+  .faq-list-number {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  .faq-list-item .search-result-details {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+  .faq-list-number h4 {
+    font-size: 45px;
   }
 }
 /*# sourceMappingURL=style.css.map */

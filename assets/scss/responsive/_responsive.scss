@@ -398,5 +398,19 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .faq-list-item .search-result-item {
+    display: block;
+  }
+  .faq-list-number {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  .faq-list-item .search-result-details {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+  .faq-list-number h4 {
+    font-size: 45px;
+  }
 }
 // max-width(450px) end
