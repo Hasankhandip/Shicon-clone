@@ -2059,6 +2059,9 @@ img {
   .footer-item {
     margin-bottom: 40px;
   }
+  .about-details {
+    margin-top: 200px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2137,6 +2140,7 @@ img {
     margin-top: -190px;
   }
   .place-search-item {
+    margin: 0;
     width: 100% !important;
   }
   .place-search-item:nth-child(2) {
@@ -2153,6 +2157,10 @@ img {
   }
   .place-search-btn-responsive {
     margin-top: 10px;
+  }
+  .booking-form-area > * {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
   }
 }
 
@@ -2196,6 +2204,12 @@ img {
   }
   .faq-list-number h4 {
     font-size: 45px;
+  }
+  .booking-img-bg {
+    height: 330px;
+  }
+  .about-details {
+    margin-top: 130px;
   }
 }
 /*# sourceMappingURL=style.css.map */
