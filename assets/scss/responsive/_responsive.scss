@@ -177,6 +177,9 @@
       }
     }
   }
+  .destination-time {
+    margin-right: 40px;
+  }
 }
 // max-width(991px) end
 
@@ -353,7 +356,8 @@
     margin-top: -190px;
   }
   .place-search-item {
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
     width: 100% !important;
     &:nth-child(2) {
       width: 100% !important;
@@ -425,6 +429,13 @@
   }
   .about-details {
     margin-top: 130px;
+  }
+  .destination-time {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .blog-post-details {
+    display: block;
   }
 }
 // max-width(450px) end
