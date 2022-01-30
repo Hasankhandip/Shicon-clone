@@ -2,12 +2,10 @@
 // wow.js start
 new WOW().init();
 // wow.js end
-
-
 // preloader start
 $(window).on("load", function () {
   $(".preloader")
-    .delay(500)
+    .delay(1000)
     .animate(
       {
         opacity: "0",
@@ -19,8 +17,6 @@ $(window).on("load", function () {
     );
 });
 // preloader end
-
-
 // unvail lazy loader start
 $("img").unveil(200, function() {
   $(this).load(function() {
@@ -28,7 +24,6 @@ $("img").unveil(200, function() {
   });
 });   
 // unvail lazy loader end
-
 // scroll-top btn start
 $(window).on("scroll", function () {
   if ($(this).scrollTop() > 300) {
@@ -37,12 +32,10 @@ $(window).on("scroll", function () {
     $(".scroll-top").removeClass("active");
   }
 });
-
 $(".scroll-top").on("click", function () {
   $("html, body").animate({ scrollTop: 0 }, 500);
 });
 // scroll-top btn end
-
 // odometer js start
 (function() {
   $(".overview-counter-up").each(function () {
@@ -57,7 +50,6 @@ $(".scroll-top").on("click", function () {
   });
 })();
 // odometer js end
-
 // header-navbar js start
 $(window).on("scroll", function(){
   if ($(this).scrollTop() > 85 ) {
@@ -93,7 +85,6 @@ $(window).on("scroll", function(){
   }
 });
 // header-navbar js end
-
 //  header-search-bar js start
 $(".header-serch-bar").on("click",function(){
   $(this).addClass("remove");
@@ -111,3 +102,22 @@ $(".banner-section").on("click",function(){
   $(".header-search-input-item").removeClass("active");
 });
 //  header-search-bar js end
+// book-page-ship-choose js start
+$(document).ready(function(){
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 4,
+    slidesToScroll: false,
+    asNavFor: '.slider-for',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true
+  });
+});
+// book-page-ship-choose js end
